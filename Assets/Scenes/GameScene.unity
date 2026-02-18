@@ -1006,6 +1006,7 @@ GameObject:
   - component: {fileID: 724166134}
   - component: {fileID: 724166136}
   - component: {fileID: 724166135}
+  - component: {fileID: 724166137}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -1158,6 +1159,26 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 2.77
+--- !u!114 &724166137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724166131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b582e81b078c3c458cef0698f4b7f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frames:
+  - {fileID: 21300000, guid: e8585b4c608ceae4f834fab8e477116b, type: 3}
+  - {fileID: 21300000, guid: 94b965483067db245a8dc11222fab9ec, type: 3}
+  - {fileID: 21300000, guid: e8585b4c608ceae4f834fab8e477116b, type: 3}
+  - {fileID: 21300000, guid: 657099a2b7dcc3443aaba6125c8c4550, type: 3}
+  framesPerSecond: 15
+  loop: 1
+  useUnscaledDeltaTime: 0
 --- !u!1 &808029652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,6 +1781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1707865114}
   - component: {fileID: 1707865115}
+  - component: {fileID: 1707865116}
   m_Layer: 5
   m_Name: GameOverWindow
   m_TagString: Untagged
@@ -1789,7 +1811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000045776, y: 0.0000076294}
+  m_AnchoredPosition: {x: 1000, y: 0}
   m_SizeDelta: {x: 290.987, y: 295.646}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1707865115
@@ -1804,6 +1826,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f2a164a2de5dd4bb97ad8b1dfb6d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &1707865116
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707865113}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 427bd5db35813234f995627e9603f548, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 427bd5db35813234f995627e9603f548, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1778924265
 GameObject:
   m_ObjectHideFlags: 0
