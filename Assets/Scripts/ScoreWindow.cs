@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,5 +26,16 @@ public class ScoreWindow : MonoBehaviour
         //Debug.Log("Score: " + score);
         //scoreText.text = score.ToString();
 
+        Bird.GetInstance().OnDied += HideScoreWindow;
+    }
+
+    private void HideScoreWindow(object sender, EventArgs e)
+    {
+        Hide();
+    }
+
+    private void Hide()
+    {
+        gameObject.SetActive(false);
     }
 }
