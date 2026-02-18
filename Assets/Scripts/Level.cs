@@ -31,7 +31,7 @@ public class Level : MonoBehaviour
     private Floor floor2;
 
     // CLOUDS
-    private const float CLOUDS_MOVE_SPEED = 50f;
+    private const float CLOUDS_MOVE_SPEED = 20f;
     private const float CAMERA_WIDTH = 178f;    // La larghezza totale della visuale della camera è 178 unità (da -89 a +89), quindi per posizionare le nuvole all'estrema destra, usiamo CAMERA_WIDTH / 2
     private const float CAMERA_RIGHT = CAMERA_WIDTH / 2f;  // +89
     private const float CAMERA_LEFT = -CAMERA_WIDTH / 2f;  // -89
