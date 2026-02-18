@@ -36,7 +36,7 @@ public class Bird : MonoBehaviour
     {
         switch(state) {
             case State.WaitingToStart:
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButton(0))
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
                 {
                     state = State.Playing;
                     birdRigidbody2D.bodyType = RigidbodyType2D.Dynamic;
@@ -50,7 +50,7 @@ public class Bird : MonoBehaviour
                 }
                 break;
             case State.Playing:
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButton(0))
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
                 {
                     Jump();
                 }
