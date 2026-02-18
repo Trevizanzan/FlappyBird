@@ -5,7 +5,7 @@ public static class Score
 {
     public static void Start()
     {
-        ResetHighscore();
+        //ResetHighscore();
         Bird.GetInstance().OnDied += Bird_OnDied;
     }
 
