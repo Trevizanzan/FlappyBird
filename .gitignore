@@ -74,7 +74,6 @@ StyleCopReport.xml
 *_p.c
 *_h.h
 *.ilk
-*.meta
 *.obj
 *.iobj
 *.pch
@@ -361,3 +360,28 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# ===== UNITY =====
+[Ll]ibrary/
+[Tt]emp/
+[Uu]serSettings/
+[Mm]emoryCaptures/
+[Bb]uild/
+[Bb]uilds/
+
+# Unity crashreports
+sysinfo.txt
+*.stackdump
+
+# Unity per-project configs (opzionale)
+# Packages/packages-lock.json  # decommenta se usi UPM
+
+# Unity3D Generated File On Crash Reports
+.consulo/
+.idea/
+ExportedObj/
+.vs/
+
+# OS
+.DS_Store
+Thumbs.db
