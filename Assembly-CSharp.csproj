@@ -80,6 +80,7 @@
     <Compile Include="Assets\CodeMonkey\Utils\World_Sprite.cs" />
     <Compile Include="Assets\Scripts\GameHandler.cs" />
     <Compile Include="Assets\CodeMonkey\CMDebug.cs" />
+    <Compile Include="Assets\Scripts\SpriteAnimator.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UI_Bar.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\Button_UI.cs" />

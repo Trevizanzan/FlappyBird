@@ -55,8 +55,7 @@ public class Bird : MonoBehaviour
                     Jump();
                 }
 
-                transform.eulerAngles = new Vector3(0, 0, birdRigidbody2D.linearVelocity.y * 0.2f);   // Se la velocità è positiva, il bird guarda in alto, se è negativa, guarda in basso
-
+                transform.eulerAngles = new Vector3(0, 0, birdRigidbody2D.linearVelocity.y * 0.1f);   // Se la velocità è positiva, il bird guarda in alto, se è negativa, guarda in basso
 
                 // FOR FUN: fai in modo che se la velocità è positiva, il bird guarda avanti, se è negativa, guarda indietro:
                 //transform.localScale = new Vector3(birdRigidbody2D.linearVelocity.y > 0 ? 1 : -1, 1, 1);
