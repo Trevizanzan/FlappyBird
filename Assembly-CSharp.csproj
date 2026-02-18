@@ -74,6 +74,7 @@
     <Compile Include="Assets\CodeMonkey\Utils\UI_BarMultiple.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\UtilsClass.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\FunctionTimer.cs" />
+    <Compile Include="Assets\Scripts\WaitingToStartWindow.cs" />
     <Compile Include="Assets\Scripts\MainMenuWindow.cs" />
     <Compile Include="Assets\Scripts\ScoreWindow.cs" />
     <Compile Include="Assets\CodeMonkey\Utils\World_Sprite.cs" />
