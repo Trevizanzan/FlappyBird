@@ -34,9 +34,15 @@ public class Bird : MonoBehaviour
 
     private void Update()
     {
-        switch(state) {
+        // Rileva input (tastiera, mouse O touch)
+        bool inputDetected = Input.GetKeyDown(KeyCode.Space) ||
+                             Input.GetMouseButtonDown(0) ||
+                             (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
+
+
+        switch (state) {
             case State.WaitingToStart:
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                if (inputDetected)
                 {
                     state = State.Playing;
                     birdRigidbody2D.bodyType = RigidbodyType2D.Dynamic;
@@ -50,7 +56,7 @@ public class Bird : MonoBehaviour
                 }
                 break;
             case State.Playing:
-                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                if (inputDetected)
                 {
                     Jump();
                 }
