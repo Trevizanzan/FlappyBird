@@ -15,8 +15,8 @@ public class Level : MonoBehaviour
     private const float PIPE_WIDTH = 7.8f;
     private const float PIPE_HEAD_HEIGHT = 3.75f;
     private const float PIPE_MOVE_SPEED = 30f;
-    private const float PIPE_DESTROY_X_POSITION = -100f;
-    private const float PIPE_SPAWN_X_POSITION = +100f;
+    private const float PIPE_DESTROY_X_POSITION = -150f;
+    private const float PIPE_SPAWN_X_POSITION = +150f;
     private List<Pipe> pipeList;
     private int pipesPassedCount = 0;
     private int pipesSpawned;
@@ -26,15 +26,15 @@ public class Level : MonoBehaviour
 
     // FLOOR
     private const float FLOOR_MOVE_SPEED = 30f; // stessa velocità delle pipe per dare l'effetto di movimento coordinato
-    private const float FLOOR_WIDTH = 192f;
+    private const float FLOOR_WIDTH = 246.8f;
     private Floor floor1;
     private Floor floor2;
 
     // CLOUDS
-    private const float CLOUDS_MOVE_SPEED = 20f;
+    private const float CLOUDS_MOVE_SPEED = 15f;
     private const float CAMERA_WIDTH = 178f;    // La larghezza totale della visuale della camera è 178 unità (da -89 a +89), quindi per posizionare le nuvole all'estrema destra, usiamo CAMERA_WIDTH / 2
-    private const float CAMERA_RIGHT = CAMERA_WIDTH / 2f;  // +89
-    private const float CAMERA_LEFT = -CAMERA_WIDTH / 2f;  // -89
+    private const float CAMERA_RIGHT = CAMERA_WIDTH / 1.5f;  // +89
+    private const float CAMERA_LEFT = -CAMERA_WIDTH / 1.5f;  // -89
     private const float CLOUD_WIDTH = 128f;
     private const float CLOUD_HEIGHT = 26f;
 

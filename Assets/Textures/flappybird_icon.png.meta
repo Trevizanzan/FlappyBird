@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flappybird_icon_0: 6021605196771252283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

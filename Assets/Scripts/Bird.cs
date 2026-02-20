@@ -26,6 +26,7 @@ public class Bird : MonoBehaviour
 
     private void Awake()
     {
+        Application.targetFrameRate = 60;   // Imposta il frame rate a 60 fps per una migliore esperienza di gioco
         instance = this;
         birdRigidbody2D = GetComponent<Rigidbody2D>();
         birdRigidbody2D.bodyType = RigidbodyType2D.Static;
