@@ -39,7 +39,6 @@ public class Bird : MonoBehaviour
                              Input.GetMouseButtonDown(0) ||
                              (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
 
-
         switch (state) {
             case State.WaitingToStart:
                 if (inputDetected)
